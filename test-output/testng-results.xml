@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-22T14:09:44 IST" name="Default suite" finished-at="2021-11-22T14:10:33 IST" duration-ms="49202">
+  <suite started-at="2021-11-29T10:07:21 IST" name="Suite" finished-at="2021-11-29T10:08:12 IST" duration-ms="51723">
     <groups>
     </groups>
-    <test started-at="2021-11-22T14:09:44 IST" name="Default test" finished-at="2021-11-22T14:10:33 IST" duration-ms="49202">
+    <test started-at="2021-11-29T10:07:21 IST" name="Test" finished-at="2021-11-29T10:08:12 IST" duration-ms="51723">
       <class name="com.Runnerclass.RunnerWithTestNG">
-        <test-method signature="log4jConfiguration()[pri:-1, instance:com.Runnerclass.RunnerWithTestNG@2053d869]" started-at="2021-11-22T14:09:44 IST" name="log4jConfiguration" finished-at="2021-11-22T14:09:44 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="log4jConfiguration()[pri:0, instance:com.Runnerclass.RunnerWithTestNG@306e95ec]" started-at="2021-11-29T10:07:20 IST" name="log4jConfiguration" finished-at="2021-11-29T10:07:21 IST" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log4jConfiguration -->
-        <test-method signature="settingProperties()[pri:-1, instance:com.Runnerclass.RunnerWithTestNG@2053d869]" started-at="2021-11-22T14:09:44 IST" name="settingProperties" finished-at="2021-11-22T14:09:46 IST" duration-ms="1901" status="PASS">
+        <test-method is-config="true" signature="settingProperties()[pri:0, instance:com.Runnerclass.RunnerWithTestNG@306e95ec]" started-at="2021-11-29T10:07:21 IST" name="settingProperties" finished-at="2021-11-29T10:07:24 IST" duration-ms="3299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingProperties -->
-        <test-method signature="changingDriver()[pri:0, instance:com.Runnerclass.RunnerWithTestNG@2053d869]" started-at="2021-11-22T14:09:46 IST" name="changingDriver" finished-at="2021-11-22T14:09:46 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="changingDriver()[pri:0, instance:com.Runnerclass.RunnerWithTestNG@306e95ec]" started-at="2021-11-29T10:07:24 IST" name="changingDriver" finished-at="2021-11-29T10:07:24 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changingDriver -->
-        <test-method signature="getUrl()[pri:1, instance:com.Runnerclass.RunnerWithTestNG@2053d869]" started-at="2021-11-22T14:09:46 IST" name="getUrl" finished-at="2021-11-22T14:10:00 IST" duration-ms="13640" status="PASS">
+        <test-method signature="getUrl(java.lang.String)[pri:1, instance:com.Runnerclass.RunnerWithTestNG@306e95ec]" started-at="2021-11-29T10:07:24 IST" name="getUrl" finished-at="2021-11-29T10:07:38 IST" duration-ms="13666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://automationpractice.com/index.php]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method signature="navigateToWomenPage()[pri:2, instance:com.Runnerclass.RunnerWithTestNG@2053d869]" started-at="2021-11-22T14:10:00 IST" name="navigateToWomenPage" finished-at="2021-11-22T14:10:12 IST" duration-ms="11920" status="PASS">
+        <test-method signature="navigateToWomenPage()[pri:2, instance:com.Runnerclass.RunnerWithTestNG@306e95ec]" started-at="2021-11-29T10:07:38 IST" name="navigateToWomenPage" finished-at="2021-11-29T10:07:51 IST" duration-ms="12948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToWomenPage -->
-        <test-method signature="fullPurchase()[pri:3, instance:com.Runnerclass.RunnerWithTestNG@2053d869]" started-at="2021-11-22T14:10:12 IST" name="fullPurchase" finished-at="2021-11-22T14:10:33 IST" duration-ms="21503" status="PASS">
+        <test-method signature="fullPurchase()[pri:3, instance:com.Runnerclass.RunnerWithTestNG@306e95ec]" started-at="2021-11-29T10:07:51 IST" name="fullPurchase" finished-at="2021-11-29T10:08:12 IST" duration-ms="21712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fullPurchase -->
       </class> <!-- com.Runnerclass.RunnerWithTestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,11 +1,14 @@
 package com.Runnerclass;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.Baseclass.BaseClass;
@@ -16,37 +19,38 @@ public class RunnerWithTestNG extends BaseClass
 {
 	public static WebDriver driver;
 	public static Logger log = Logger.getLogger(RunnerWithTestNG.class);
-	
 	public static PageObjectManager pom;
 	
-	
-	@Test(priority =-1)
+	@BeforeSuite
 	private void log4jConfiguration() 
 	{
 		PropertyConfigurator.configure("log4j.properties");
 	}
-	@Test(priority = -1)
+	
+	@BeforeTest
 	public void settingProperties()
 	{
 	driver=	webDriverLaunch("chrome");
 	log.info("properties set");
 
 	}
-	@Test(priority=0)
-
+	@BeforeClass
 	private void changingDriver() {
 		// TODO Auto-generated method stub
 		pom = new PageObjectManager(driver);
 	}
 	
 	@Test(priority=1)
-	public void getUrl() throws IOException, InterruptedException 
+	@Parameters({"url"})
+	public void getUrl(String url) throws IOException, InterruptedException 
 	{
-		String url = FileReaderManager.getInstatnceFRM().getInstanceFR().getUrl();
+		//String url = FileReaderManager.getInstatnceFRM().getInstanceFR().getUrl();
 		urlLaunch(url);
 		log.info("url launched sucessfully");
 		Thread.sleep(4000);
 	}
+
+ 
 	@Test(priority =2)
 	public void navigateToWomenPage() throws InterruptedException 
 	{

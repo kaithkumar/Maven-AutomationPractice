@@ -4,6 +4,7 @@
 package com.Runnerclass;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -27,7 +28,6 @@ import com.sdp.PageObjectManager;
 
 public class RunnerClass extends BaseClass {
 	public static WebDriver driver = webDriverLaunch("chrome");
-	
 	public static Logger log = Logger.getLogger(RunnerClass.class);
 	public static PageObjectManager pom = new PageObjectManager(driver);
 	
@@ -41,16 +41,6 @@ public class RunnerClass extends BaseClass {
 		log.info("url launched");
 		
 		getTitle();
-		
-		clickingElement(pom.getObjectHomePage().getWomenButton());
-		log.info("element clciked");
-		
-		dropDown(pom.getObjectWomensPage().getDropDown(), "byindex", "4");
-		log.info("dropdown selected");
-		
-		clickingElement(pom.getObjectWomensPage().getPrintedDress());
-		log.info("printed dress selected");
-		Thread.sleep(4000);
 		
 		clickingElement(pom.getObjectSleevePage().getAddToCart());
 		log.info("added to cart");
@@ -80,6 +70,7 @@ public class RunnerClass extends BaseClass {
 		log.info("screen shot taken");
 		
 		quitBrowser();
+		
 	}
 
 }
