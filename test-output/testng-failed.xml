@@ -5,8 +5,12 @@
     <classes>
       <class name="com.Runnerclass.RunnerWithTestNG">
         <methods>
+          <include name="getUrl"/>
+          <include name="changingDriver"/>
           <include name="fullPurchase"/>
           <include name="navigateToWomenPage"/>
+          <include name="settingProperties"/>
+          <include name="log4jConfiguration"/>
         </methods>
       </class> <!-- com.Runnerclass.RunnerWithTestNG -->
     </classes>
