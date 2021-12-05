@@ -20,6 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+
 
 public class BaseClass {
 	public static WebDriver driver;
@@ -126,8 +129,6 @@ public class BaseClass {
 		return value;	
 	}
 	
-	
-	
 	public static void closeTab() 
 	{
 		driver.close();
@@ -137,7 +138,5 @@ public class BaseClass {
 	{
 		driver.quit();
 	}
-	
-
 	
 }

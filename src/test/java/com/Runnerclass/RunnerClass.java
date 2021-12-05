@@ -26,6 +26,8 @@ import com.pageobjectmodel.WomensPage;
 import com.sdp.FileReaderManager;
 import com.sdp.PageObjectManager;
 
+import io.restassured.RestAssured;
+
 public class RunnerClass extends BaseClass {
 	public static WebDriver driver = webDriverLaunch("chrome");
 	public static Logger log = Logger.getLogger(RunnerClass.class);
@@ -41,6 +43,15 @@ public class RunnerClass extends BaseClass {
 		log.info("url launched");
 		
 		getTitle();
+		clickingElement(pom.getObjectHomePage().getWomenButton());
+		log.info("element clciked");
+		
+		dropDown(pom.getObjectWomensPage().getDropDown(), "byindex", "4");
+		log.info("dropdown selected");
+		
+		clickingElement(pom.getObjectWomensPage().getPrintedDress());
+		log.info("printed dress selected");
+		Thread.sleep(4000);
 		
 		clickingElement(pom.getObjectSleevePage().getAddToCart());
 		log.info("added to cart");
@@ -70,6 +81,7 @@ public class RunnerClass extends BaseClass {
 		log.info("screen shot taken");
 		
 		quitBrowser();
+		
 		
 	}
 

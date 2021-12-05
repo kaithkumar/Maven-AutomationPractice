@@ -35,4 +35,11 @@ String password = p.getProperty("password");
 return password;
 }
 
+
+public String getBrowser() {
+	// TODO Auto-generated method stub
+   String browser = p.getProperty("browser");
+   return browser;
+}
+
 }

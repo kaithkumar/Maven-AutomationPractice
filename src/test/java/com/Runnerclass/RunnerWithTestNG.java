@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -48,6 +47,8 @@ public class RunnerWithTestNG extends BaseClass
 		urlLaunch(url);
 		log.info("url launched sucessfully");
 		Thread.sleep(4000);
+		
+		
 	}
 
  
@@ -96,10 +97,7 @@ public class RunnerWithTestNG extends BaseClass
 		log.info("screen shot taken");
 		
 		quitBrowser();
-
+		
 	}
-	
-	
-	
 
 }
